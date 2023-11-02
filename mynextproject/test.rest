@@ -1,0 +1,48 @@
+POST http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+  "username": "user2",
+  "password": "123"
+}
+
+###
+
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+  "username": "user2",
+  "password": "123"
+}
+
+###
+
+POST http://localhost:3000/api/content
+Content-Type: application/json
+
+{
+  "text_field": "this is some content",
+  "date": null,
+  "userId": 5,
+  "visibility": 0,
+  "favourite": 0,
+  "isDeleted": 0,
+  "text": "New Doc"
+}
+
+###
+
+PUT http://localhost:3000/api/content/8
+Content-Type: application/json
+
+{
+  "text_field": "alfred",
+  "date": null,
+  "visibility": 1,
+  "favourite": 0,
+  "isDeleted": 0,
+  "text": "Updated Doc"
+}
+
+###
